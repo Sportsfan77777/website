@@ -57,12 +57,12 @@ a:hover {
 #content {height: 780px;}
 .left {background:url(images/side.jpg) no-repeat; height:764px}
 .left ul { width:200px; margin:0 0 0 40px}
-.left ul li {border-bottom: #1e3a07 1px solid; line-height:30px; width:180px}
+.left ul li {border-bottom: #1e3a07 1px solid; line-height: 26px; width:180px}
 .left li a {color:#1e3a07}
-.left img{margin-top:10px; margin-bottom:10px;}
+.left img{margin-top:7px; margin-bottom:5px;}
 .right {width:520px}
 .right p{width:500px; margin-bottom:10px; font-size:13px}
-.right img {margin-top:10px}
+.right img {margin-top:10px; max-height: 400px; max-width: 400px; width: auto; height: auto}
 .right h2 {font-size:28px; padding:20px 0}
 /* footer */
 #footer { clear:both; color:#fff}
