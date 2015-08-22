@@ -34,6 +34,12 @@ target_end = "<!-- end %s toolbar -->" % name
 toolbar_f = open(toolbar_fn, "r") # will read from toolbar
 
 for html_fn in html_fns:
+    # Check if this toolbar is in this file
+    if (not target_start in open(html_fn).read()) or 
+       (not target_end in open(html_fn).read()):
+        # If it is not, skip to next file in the loop
+        continue
+
     tmp_fn = "%s.tmp" % html_fn
     f = open(html_fn, "r") # Read to this file
     tmp_f = open(tmp_fn, "w") # Write to this file (mv it to old file later)
