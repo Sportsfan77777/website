@@ -22,7 +22,7 @@ else:
 #### The argument is supplied ####
 
 print "Updating Toolbar named '%s'" % name
-toolbar_fn = "%s_toolbar.txt" % name
+toolbar_fn = "%s_toolbar.html" % name
 
 # (1) Get .html files
 html_fns = glob.glob("*.html")
