@@ -61,62 +61,63 @@
         <!-- end research toolbar -->
       </div>
       <div class="right folat-r">
-        <h2><a href="https://www.cfa.harvard.edu/opportunities/solar_reu/" target="_blank">CfA Solar Physics REU!</a></h2>
+        <h2><a href="https://www.strw.leidenuniv.nl/summerstudents/" target="_blank">LEAPS!</a></h2>
 
         <p><b>Advisors: </b>
-          <a href="http://helio.cfa.harvard.edu/~kkozarev/" target="_blank">Dr. Kamen Kozarev</a> and 
-          <a href="https://www.cfa.harvard.edu/~kkorreck/" target="blank"> Dr. Kelly Korreck</a></p>
+          <a href="https://www.strw.leidenuniv.nl/people/touchscreen2/persinline.php?id=1521" target="_blank">Dr. Lucie Jilkova</a> and 
+          <a href="http://home.strw.leidenuniv.nl/~spz/" target="blank"> Prof. Simon Portegies Zwart</a></p>
 
-        <p element style="margin-bottom:1px">For my project, I catalogued coronal waves to learn more about the relationship between shock waves in the solar corona and solar energetic particles (SEPs).</p>
-        <p element style="margin-top:5px">
-        Some – but not all – shock waves eject large fluxes of SEPs that can instigate bad space weather. We want to find out which types of shocks unleash these events.</p>
+        <p element style="margin-bottom:1px">For my project, I investigated which types of stellar encounters could result in a passing-by star transferring objects from its circumstellar disk into our Solar System.</p>
+        <p element style="margin-top:5px; margin-bottom:2px">
+        This could have only happened in the Sun's birth cluster. An encounter close enough to transfer objects would still be unlikely. If it did happen, it could leave a signature.</p>
 
         <center>
         <video width="205", controls>
-         <source src="movies/sdoWave_c.mp4" type="video/mp4">
-         <source src="movies/sdoWave_c.ogv" type="video/ogg">
+         <source src="movies/encounter_zoomed_out.mp4" type="video/mp4">
+         <source src="movies/encounter_zoomed_out.ogv" type="video/ogg">
            Your browser does not support HTML5 video.
         </video>
         &nbsp&nbsp&nbsp
         <video width="205", controls>
-         <source src="movies/greenWave.mp4" type="video/mp4">
-         <source src="movies/greenWave.ogv" type="video/ogg">
+         <source src="movies/encounter_zoomed_in.mp4" type="video/mp4">
+         <source src="movies/encounter_zoomed_in.ogv" type="video/ogg">
            Your browser does not support HTML5 video.
         </video>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         </center>
 
         <p><center><font face="Arial" size=1.8>
-          <a href="https://aia.lmsal.com/" target="_blank">SDO</a> video of a 04/23/13 shock wave. Where is it?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          After image processing, here it is!
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</font></center></p>
+          A stellar encounter! The Sun is in motion.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          Here in a different view, the Sun is at the center.
+        &nbsp&nbsp&nbsp&nbsp&nbsp</font></center></p>
 
         <!--br element style="line-height:2px"-->
 
-        <p element style="margin-top:16px">To study this phenomenon, I identified candidate shock wave events from <a href="http://www.lmsal.com/hek/hek_isolsearch.html" target="_blank">here</a>.<br>
-          I then wrote an IDL program to measure these waves' kinematics, as shown below.<br>
-          This kinematic data helped confirm the majority of these wave events to be shocks.
+        <p element style="margin-top:16px; margin-bottom:1px">I used an N-Body code in <a href="http://amusecode.org/" target="_blank">AMUSE</a> to simulate stellar encounters with different flyby star masses, distances of closest approach, (and flyby eccentricities and inclinations).<br>
+        <p element style="margin-top:5px; margin-bottom:1px">
+          I found that the lowest mass stars can transfer objects at distances of up to 400 AU.
         </p>
 
-        <center><a href="images/research/shockWaveKinematics.png" target="_blank"><img element style="max-height:250px; max-width:250px; auto"src="images/research/shockWaveKinematics.png" alt="" /></a>
+        <center><a href="images/research/transferRates.png" target="_blank"><img element style="max-height:200px; max-width:200px; auto"src="images/research/transferRates.png" alt="" /></a>
           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</center>
 
-        <p><center><font face="Arial" size=1.8>The yellow curve shows the shock wave's distance from the Sun over time as it rises through the corona.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</font></center></p>
+        <p><center><font face="Arial" size=1.8>This plot shows the percentage of the flyby star's disk that transfers to the Sun's disk&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>for different masses of the flyby star and different distances of closest approach for the flyby orbit.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</font></center></p>
 
-        <p>
-          <b>Coronal Wave Database: </b><a href="http://helio.cfa.harvard.edu/cashew/" target="_blank">Cashew</a> (maintained by my advisor)
+        <p element style="margin-bottom:1px">
+          <b>AAS Poster: </b><a href="posters/LEAPS.pdf" target="_blank">LEAPS.pdf</a><br>
+          <b>LEAPS Final Presentation: </b><a href="presentations/LEAPS.pptx">LEAPS.pptx</a>, <a href="presentations/LEAPS_pptx.pdf" target="_blank">PDF Version</a>
         </p>
-
-        <p>
-          <b>AAS Poster: </b><a href="posters/SAO.pdf" target="_blank">SAO.pdf</a><br>
-          <b>REU Final Presentation: </b><a href="presentations/SAO.pptx">SAO.pptx</a>, <a href="https://zenodo.org/record/12510/files/Hammer_Presentation.pdf" target="_blank">PDF Version</a>, <a href="https://zenodo.org/record/12510" target="_blank">Full Zenodo Page</a><br>
-          <b>ApJ Paper: </b><a href="http://adsabs.harvard.edu/abs/2015ApJ...799..167K" target="_blank">Properties of a Coronal Shock Wave as a Driver of ... SEP Acceleration </a>
+        <p element style="margin-top:5px">
+          <b>ApJ Paper: </b><a href="http://adsabs.harvard.edu/abs/2015arXiv150603105J" target="_blank">Constraining Capture Scenarios of Sedna+ from a Stellar Encounter</a><br>
+          <b>Press Release: </b><a href="https://www.scientificamerican.com/article/sun-accused-of-stealing-planetary-objects-from-another-star/" target="_blank">Scientific American</a>
         </p>
 
     </div>
     <!-- /content -->
     <div id="footer">
       <div class="float-l">
+        <!-- start footer toolbar -->
         <br>
         <div id="ftlink"> <a href="index.html">Home</a> | <font color="FFA347">Contact Email:</font> <a href="mailto:mhammer@as.arizona.edu"><font color="CCCCFF">mhammer at as dot arizona dot edu</a></font> | Last Modified on August 8th, 2015</div>
         <p id="copyright">© 2015. All Rights Reserved. 
@@ -124,7 +125,9 @@
           <a href="http://www.natureworldnews.com/articles/8066/20140715/alone-nasa-affirms-belief.htm" target="_blank">these</a>
           <a href="" target="_blank">three</a>
           <a href="https://upload.wikimedia.org/wikipedia/commons/f/fe/Fomalhaut_B_entire-Hubble_Telescope.jpg" target="_blank">places</a>.<br/>
-          Designed by <a href="http://www.free-css-templates.com/">Free CSS Templates</a>, Thanks to <a href="http://www.openwebdesign.org/">pro web design</a></p>
+          Designed by <a href="http://www.free-css-templates.com/">Free CSS Templates</a>, Thanks to <a href="http://www.openwebdesign.org/">pro web design</a>
+        </p>
+        <!-- end footer toolbar -->
       </div>
     </div>
     <!-- /footer -->
