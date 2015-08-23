@@ -31,14 +31,16 @@ html_fns = glob.glob("*.html")
 target_start = "<!-- start %s toolbar -->" % name
 target_end = "<!-- end %s toolbar -->" % name
 
-toolbar_f = open(toolbar_fn, "r") # will read from toolbar
-
 for html_fn in html_fns:
     # Check if this toolbar is in this file
-    if (not target_start in open(html_fn).read()) or 
-       (not target_end in open(html_fn).read()):
+    if (not target_start in open(html_fn).read()) or (not target_end in open(html_fn).read()):
         # If it is not, skip to next file in the loop
+        print "Not present in file '%s'" % html_fn
         continue
+
+    print "<<<< Present in file '%s' >>>>" % html_fn
+
+    toolbar_f = open(toolbar_fn, "r") # will read from toolbar
 
     tmp_fn = "%s.tmp" % html_fn
     f = open(html_fn, "r") # Read to this file
@@ -74,6 +76,7 @@ for html_fn in html_fns:
     # Close Files
     f.close()
     tmp_f.close()
+    toolbar_f.close()
 
-toolbar_f.close()
+
 
